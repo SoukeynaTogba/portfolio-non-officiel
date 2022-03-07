@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+    
+    <title>Soukeyna Togba</title>
+</head>
+<body>
+    <!--Barre de navigation-->
+    <nav id="navigation"> 
+       
+           <h4 id="o">PORTFOLIO</h4> 
+        
+        <div id="liens"> <!--Liens à gauche-->
+            <a href="#accueil">Accueil</a> 
+            <a href="#presentation">présentation</a> 
+            <a href="#travaux">mes travaux</a> 
+            <a href="#competences">Compétences</a> 
+            <a href="#contacter">Contact</a> 
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <header id="accueil">
+        <div id="ac">
+        <h1>Hello world ! je suis Soukeyna togba</h1>
+        <h3>Developpeuse web</h3>
+        <img src="img/emo.png">
+        <p>bienvenue sur mon portfolio</p>
+    </div>
+    </header>
+
+    <!--Présentatiion-->
+    <div id="presentation">
+        <h2> PRÉSENTATION </h2>
+        <p>Actuellement une étudiante entament son 4 ème et dernier semestre en DUT MMI "métier du multimédia et d'internet"
+             avec spécialiation développement; je suis passionée par le code et l'univers des nouvelles technologies en général.
+            Je cherche un stage à effectuer à partir du 4 avril 2022, de préférence dans le développement FRONT-END. 
+            J'aime aussi tout ce qui touche au design web. Je suis plutôt polyvalente, et j'ai une grosse soif 
+        d'apprentissage, motivée par la volonté de me perfectionner de jours en jours. N'hésitez pas à me contacter </p>
+    </div>
+
+    <!--Mes travaux-->
+    <div id="travaux">
+        <h2> MES TRAVAUX </h2>
+        
+        
+        <div id="txt">
+        <h4>Le clicker game</h4>
+        <h5>HTML - SCSS - JAVASCRIPT VANILLA</h5>
+        <p>Voici un devoir que j'ai effectué lors de mon cursus en DUT MMI. C'est un jeu que j'ai codé
+            de façon responsive. Le système est simple, le joueur gagne des points en cliquant sur le personnage et il a la possibilité 
+        d'acheter des bonus à partir d'un certain level. De plus, il a le choix entre trois personnages différents, pour changer il a juste à cliquer 
+    sur le bouton 'changer de personnage'. </p>
+        </div>
+
+
+        <div id="image">
+            <img src="img/Mockup.png">
+        </div>
+
+
+    </div>
+    </div>
+
+     <!--Mes compétences-->
+     <div id="competences">
+        <h2> MES COMPÉTENCES </h2>
+
+        <ul>
+            <li> Conception du FRONT END </li>
+            <li>Conception, manipulation, <br>
+                et utilisation de Base de données</li>
+            <li>Maitrise du responsive</li>
+            <li>UI design : étude de l'ergonomie <br>
+                 d'une page web </li>
+            <li>Site vitrine, blog, etc...</li>
+        </ul>
+
+        <h2> LANGAGES</h2>
+        <ul>
+            <li> HTML/CSS</li>
+            <li>SCSS</li>
+            <li>JAVASCRIPT</li>
+            <li>PHP </li>
+            <li>MYSQL</li>
+        </ul>
+
+    </div>
+
+     <!--Me contacter-->
+     <div id="contacter">
+        <h2> CONTACTEZ-MOI</h2>
+        <section id="oui">
+            <div class="formulaire">
+                <div class="text">
+                    <h5>Une question ? Une projet ? Un intérêt professionnel ?</h5>
+                </div>
+    <form action="contact.html" method="get">
+        <input type="text" name="" placeholder="votre prénom">
+        <input type="text" name="" placeholder="votre e-mail">
+        <p> Vous êtes ? <select>
+            <option value="parti">une entreprise</option>
+            <option value="parti">un free-lanceur</option>
+            <option value="parti">un particulier</option>
+            <option value="parti">autre</option>
+        </select>
+        <p> Dites moi tout ci dessous : <br>
+            <textarea name="lemessage" rows="5" cols="40 " placeholder="ici..."> </textarea> </p>
+        <p> <input type="submit" value="Envoyer"> </p>
+    </form>
+                <p> mon mail : soukeynatogba@yahoo.com <br>
+                    mon linkedin : soukeynaLINK</p>
+            </div>
+        </section>
+    </div>
+
+
+
+    <!--Avis-->
+    <div id="avis">
+        <div id="alors">
+        <p>Comment avez-vous trouver mon portfolio ? </p>
+         </div>
+        <i class="lar la-star" data-value="1"></i> <!-- étoile qui vaut 1 -->
+        <i class="lar la-star" data-value="2"></i> <!-- étoile qui vaut 2 -->
+        <i class="lar la-star" data-value="3"></i> <!-- étoile qui vaut 3 -->
+        <i class="lar la-star" data-value="4"></i> <!-- étoile qui vaut 4 -->
+        <i class="lar la-star" data-value="5"></i> <!-- étoile qui vaut 5 -->
+        <input type="hidden" name="note" id="note" value="0">
+
+        <p>Un conseil pour améliorer ce site ?</p>
+        <textarea id="champs" rows="1" cols="40" placeholder="écrire ici..."></textarea>
+
+        <input type="submit" value="envoyer">
+
+    </div>
+    <input type="text" name="note" id="note" value="0"> <!--pour voir la mise à jour de la note lors de la programmation (caché au visiteur du site) -->
+
+</body>
+<script type="text/javascript" src="portfolio.js"></script>
+</html>
